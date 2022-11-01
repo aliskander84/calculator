@@ -32,7 +32,7 @@ percentBtn.onclick = function () {                          // Percent %
         secondNumber = Number(secondNumber);
 
         secondNumber = firstNumber / 100 * secondNumber;
-        calculate();
+        output.innerText = secondNumber;
     } else {
         error();
     }
@@ -75,7 +75,7 @@ window.addEventListener("load", function () {
             console.log("Other innerSign: " + innerSign);
         }
     }
-});                                                         
+});
 // -- End Add events -- //
 
 function clearAll() {                                       // Clear all values
@@ -88,7 +88,7 @@ function clearAll() {                                       // Clear all values
     console.log("Clear All");
 };
 
-function calculate() {                                      // Calculate values of two numbers
+function calculate() {                                      // Calculate result of two numbers
     firstNumber = Number(firstNumber);
     secondNumber = Number(secondNumber);
     switch (sign) {
